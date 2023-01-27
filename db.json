@@ -1,0 +1,36 @@
+{
+  "books": [
+    {
+      "id": "2",
+      "name": "Faili Meçhul Olasılıksız",
+      "author": "Levent Koçak",
+      "publisher": "Edebiyat Yayınları",
+      "isbn": "12357353682",
+      "price": 49.9,
+      "categoryId": "1"
+    },
+    {
+      "id": "1",
+      "name": "Yeşil Peri Gecesi",
+      "author": "Ayfer Tunç",
+      "publisher": "Can Yayınları",
+      "isbn": "1235735367282",
+      "price": 29.9,
+      "categoryId": "1"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Roman"
+    },
+    {
+      "id": "2",
+      "name": "Şiir"
+    },
+    {
+      "id": "3",
+      "name": "Deneme"
+    }
+  ]
+}

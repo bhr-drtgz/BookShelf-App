@@ -1,0 +1,18 @@
+const actionTypes = {
+    bookActions: {
+        GET_BOOKS_START: "GET_BOOKS_STARTS",
+        GET_BOOKS_SUCCESS: "GET_BOOKS_SUCCESS",
+        GET_BOOKS_FAIL: "GET_BOOKS_FAIL",
+        DELETE_BOOK_START: "DELETE_BOOKS_STARTS",
+        DELETE_BOOK_SUCCESS: "DELETE_BOOKS_SUCCESS",
+        DELETE_BOOK_FAIL: "DELETE_BOOKS_FAIL"
+     },
+    categoryActions: {
+        GET_CATEGORİES_START: "GET_CATEGORİES_START",
+        GET_CATEGORİES_SUCCESS: "GET_CATEGORİES_SUCCESS",
+        GET_CATEGORİES_FAIL: "GET_CATEGORİES_FAIL"
+
+    }
+}
+
+export default actionTypes
