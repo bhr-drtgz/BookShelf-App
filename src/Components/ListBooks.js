@@ -5,6 +5,7 @@ import api from '../Api/api'
 import urls from '../Api/urls'
 import actionTypes from '../redux/actions/actionTypes'
 import CustamModal from './CustamModal'
+import { Link } from 'react-router-dom'
 
 function ListBooks() {
     const dispatch = useDispatch()
@@ -26,8 +27,11 @@ function ListBooks() {
     }
 
     return (
-        <>
-            <table className="container table table-striped m-5">
+        <div className='container my-5'>
+        <div className='d-flex justify-content-end'>
+            <Link to={"/add-book"} className='btn btn-primary'>Kitap Ekle</Link>
+        </div>
+            <table className="table table-striped">
                 <thead className='border-bottom border-danger border-3'>
                     <tr>
                         <th scope="col">Sıra No</th>
@@ -54,7 +58,7 @@ function ListBooks() {
                                         setWillDeleteBook(book.id)
                                     }} className='generalBtn deleteBtn'>Sil</button>
                                     <button className='generalBtn editBtn'>Güncelle</button>
-                                    <button className='generalBtn detailBtn'>Detaylar</button>
+                                    <Link to={`/book-detail/${book.id}`} className='generalBtn'>Detaylar</Link>
                                 </td>
                             </tr>
                         )
@@ -71,7 +75,7 @@ function ListBooks() {
                         }} />
                 )
             }
-        </>
+        </div>
     )
 }
 
